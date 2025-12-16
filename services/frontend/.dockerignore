@@ -1,8 +1,10 @@
 node_modules
 npm-debug.log
-.env
+build
 .git
 .gitignore
 README.md
-.DS_Store
-*.md
+.env.local
+.vscode
+.idea
+*.log

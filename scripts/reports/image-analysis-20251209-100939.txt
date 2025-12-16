@@ -1,0 +1,224 @@
+Docker Image Analysis Report
+Generated: Tue, Dec  9, 2025 10:09:39 AM
+==============================================
+
+Service: auth-service
+  Image: microservices-k8s-project-auth-service:latest
+  Size: 197MB (47049567 bytes)
+  Layers: 1
+  Base Image: 
+unknown
+  Created: 2025-12-09
+  Optimization Potential: Low (<200MB)
+
+Service: user-service
+  Image: microservices-k8s-project-user-service:latest
+  Size: 196MB (46942484 bytes)
+  Layers: 1
+  Base Image: 
+unknown
+  Created: 2025-12-09
+  Optimization Potential: Low (<200MB)
+
+Service: billing-service
+  Image: microservices-k8s-project-billing-service:latest
+  Size: 196MB (46942158 bytes)
+  Layers: 1
+  Base Image: 
+unknown
+  Created: 2025-12-09
+  Optimization Potential: Low (<200MB)
+
+Service: payment-service
+  Image: microservices-k8s-project-payment-service:latest
+  Size: 196MB (46943053 bytes)
+  Layers: 1
+  Base Image: 
+unknown
+  Created: 2025-12-09
+  Optimization Potential: Low (<200MB)
+
+Service: notification-service
+  Image: microservices-k8s-project-notification-service:latest
+  Size: 195MB (46829689 bytes)
+  Layers: 1
+  Base Image: 
+unknown
+  Created: 2025-12-09
+  Optimization Potential: Low (<200MB)
+
+Service: analytics-service
+  Image: microservices-k8s-project-analytics-service:latest
+  Size: 196MB (46941943 bytes)
+  Layers: 1
+  Base Image: 
+unknown
+  Created: 2025-12-09
+  Optimization Potential: Low (<200MB)
+
+Service: admin-service
+  Image: microservices-k8s-project-admin-service:latest
+  Size: 195MB (46830909 bytes)
+  Layers: 1
+  Base Image: 
+unknown
+  Created: 2025-12-09
+  Optimization Potential: Low (<200MB)
+
+Service: frontend
+  Image: microservices-k8s-project-frontend:latest
+  Size: 81.6MB (22991345 bytes)
+  Layers: 1
+  Base Image: 
+unknown
+  Created: 2025-12-02
+  Optimization Potential: Low (<200MB)
+
+==============================================
+SUMMARY
+==============================================
+Total Images: 8
+Total Size: 335.19MB (351471148 bytes)
+Average Size: 41.90MB
+Total Layers: 8
+Average Layers: 1
+
+==============================================
+LAYER ANALYSIS: auth-service
+==============================================
+SIZE      CREATED BY
+0B        CMD ["node" "src/server.js"]
+0B        ENTRYPOINT ["dumb-init" "--"]
+0B        HEALTHCHECK &{["CMD-SHELL" "node -e \"require('http').get('http://localhost:8001/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})\""] "30s" "3s" "5s" "0s" '\x03'}
+0B        EXPOSE [8001/tcp]
+0B        USER node
+238kB     COPY --chown=node:node . . # buildkit
+13.3MB    COPY /app/node_modules ./node_modules # buildkit
+8.19kB    WORKDIR /app
+135kB     RUN /bin/sh -c apk add --no-cache dumb-init # buildkit
+
+==============================================
+LAYER ANALYSIS: user-service
+==============================================
+SIZE      CREATED BY
+0B        CMD ["node" "src/server.js"]
+0B        ENTRYPOINT ["dumb-init" "--"]
+0B        HEALTHCHECK &{["CMD-SHELL" "node -e \"require('http').get('http://localhost:8002/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})\""] "30s" "3s" "5s" "0s" '\x03'}
+0B        EXPOSE [8002/tcp]
+0B        USER node
+229kB     COPY --chown=node:node . . # buildkit
+12.4MB    COPY /app/node_modules ./node_modules # buildkit
+8.19kB    WORKDIR /app
+135kB     RUN /bin/sh -c apk add --no-cache dumb-init # buildkit
+
+==============================================
+LAYER ANALYSIS: billing-service
+==============================================
+SIZE      CREATED BY
+0B        CMD ["node" "src/server.js"]
+0B        ENTRYPOINT ["dumb-init" "--"]
+0B        HEALTHCHECK &{["CMD-SHELL" "node -e \"require('http').get('http://localhost:8003/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})\""] "30s" "3s" "5s" "0s" '\x03'}
+0B        EXPOSE [8003/tcp]
+0B        USER node
+229kB     COPY --chown=node:node . . # buildkit
+12.4MB    COPY /app/node_modules ./node_modules # buildkit
+8.19kB    WORKDIR /app
+135kB     RUN /bin/sh -c apk add --no-cache dumb-init # buildkit
+
+==============================================
+LAYER ANALYSIS: payment-service
+==============================================
+SIZE      CREATED BY
+0B        CMD ["node" "src/server.js"]
+0B        ENTRYPOINT ["dumb-init" "--"]
+0B        HEALTHCHECK &{["CMD-SHELL" "node -e \"require('http').get('http://localhost:8004/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})\""] "30s" "3s" "5s" "0s" '\x03'}
+0B        EXPOSE [8004/tcp]
+0B        USER node
+233kB     COPY --chown=node:node . . # buildkit
+12.4MB    COPY /app/node_modules ./node_modules # buildkit
+8.19kB    WORKDIR /app
+135kB     RUN /bin/sh -c apk add --no-cache dumb-init # buildkit
+
+==============================================
+LAYER ANALYSIS: notification-service
+==============================================
+SIZE      CREATED BY
+0B        CMD ["node" "src/server.js"]
+0B        ENTRYPOINT ["dumb-init" "--"]
+0B        HEALTHCHECK &{["CMD-SHELL" "node -e \"require('http').get('http://localhost:8005/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})\""] "30s" "3s" "5s" "0s" '\x03'}
+0B        EXPOSE [8005/tcp]
+0B        USER node
+217kB     COPY --chown=node:node . . # buildkit
+11.4MB    COPY /app/node_modules ./node_modules # buildkit
+8.19kB    WORKDIR /app
+135kB     RUN /bin/sh -c apk add --no-cache dumb-init # buildkit
+
+==============================================
+LAYER ANALYSIS: analytics-service
+==============================================
+SIZE      CREATED BY
+0B        CMD ["node" "src/server.js"]
+0B        ENTRYPOINT ["dumb-init" "--"]
+0B        HEALTHCHECK &{["CMD-SHELL" "node -e \"require('http').get('http://localhost:8006/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})\""] "30s" "3s" "5s" "0s" '\x03'}
+0B        EXPOSE [8006/tcp]
+0B        USER node
+229kB     COPY --chown=node:node . . # buildkit
+12.4MB    COPY /app/node_modules ./node_modules # buildkit
+8.19kB    WORKDIR /app
+135kB     RUN /bin/sh -c apk add --no-cache dumb-init # buildkit
+
+==============================================
+LAYER ANALYSIS: admin-service
+==============================================
+SIZE      CREATED BY
+0B        CMD ["node" "src/server.js"]
+0B        ENTRYPOINT ["dumb-init" "--"]
+0B        HEALTHCHECK &{["CMD-SHELL" "node -e \"require('http').get('http://localhost:8007/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})\""] "30s" "3s" "5s" "0s" '\x03'}
+0B        EXPOSE [8007/tcp]
+0B        USER node
+221kB     COPY --chown=node:node . . # buildkit
+11.4MB    COPY /app/node_modules ./node_modules # buildkit
+8.19kB    WORKDIR /app
+135kB     RUN /bin/sh -c apk add --no-cache dumb-init # buildkit
+
+==============================================
+LAYER ANALYSIS: frontend
+==============================================
+SIZE      CREATED BY
+0B        CMD ["nginx" "-g" "daemon off;"]
+0B        EXPOSE [3000/tcp]
+0B        HEALTHCHECK &{["CMD-SHELL" "wget --quiet --tries=1 --spider http://localhost:3000/health || exit 1"] "30s" "3s" "0s" "0s" '\x03'}
+20.5kB    COPY nginx.conf /etc/nginx/conf.d/default.conf # buildkit
+1.36MB    COPY /app/build /usr/share/nginx/html # buildkit
+0B        LABEL description=Frontend - Microservices Platform
+0B        LABEL version=1.0.0
+0B        LABEL maintainer=JP
+42.6MB    RUN /bin/sh -c set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
+
+==============================================
+OPTIMIZATION RECOMMENDATIONS
+==============================================
+
+1. Use Alpine Linux base images (node:18-alpine vs node:18)
+2. Multi-stage builds to exclude build dependencies
+3. Combine RUN commands to reduce layers
+4. Use .dockerignore to exclude unnecessary files
+5. Clear package manager cache after installation
+6. Use specific package versions
+7. Minimize number of COPY/ADD instructions
+8. Order Dockerfile from least to most frequently changed
+
+==============================================
+OPTIMIZATION POTENTIAL
+==============================================
+Current Total Size: 335.19MB
+Expected After Optimization: 167.59MB
+Potential Savings: 167.59MB (50% reduction)
+
+Next Steps:
+1. Review Dockerfiles for each service
+2. Implement multi-stage builds
+3. Switch to Alpine base images
+4. Update .dockerignore files
+5. Run optimization build script
+6. Compare results with this baseline
