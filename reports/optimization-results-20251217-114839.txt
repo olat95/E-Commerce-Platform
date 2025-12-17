@@ -1,0 +1,59 @@
+Image Size Comparison Report
+Generated: Wed, Dec 17, 2025 11:48:39 AM
+==============================================
+
+Service: auth-service
+  Original: 44MB
+  Optimized: 44MB
+  Savings: 0MB
+  Reduction: 0%
+
+Service: user-service
+  Original: 44MB
+  Optimized: 44MB
+  Savings: 0MB
+  Reduction: 0%
+
+Service: billing-service
+  Original: 44MB
+  Optimized: 44MB
+  Savings: 0MB
+  Reduction: 0%
+
+Service: payment-service
+  Original: 44MB
+  Optimized: 44MB
+  Savings: 0MB
+  Reduction: 0%
+
+Service: notification-service
+  Original: 44MB
+  Optimized: 44MB
+  Savings: 0MB
+  Reduction: 0%
+
+Service: analytics-service
+  Original: 44MB
+  Optimized: 44MB
+  Savings: 0MB
+  Reduction: 0%
+
+Service: admin-service
+  Original: 44MB
+  Optimized: 44MB
+  Savings: 0MB
+  Reduction: 0%
+
+Service: frontend
+  Original: 21MB
+  Optimized: 21MB
+  Savings: 0MB
+  Reduction: 0%
+
+==============================================
+TOTAL SUMMARY
+==============================================
+Original Total: 335MB
+Optimized Total: 334MB
+Total Savings: 0MB
+Total Reduction: 0%

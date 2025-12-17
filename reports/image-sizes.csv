@@ -1,0 +1,17 @@
+Service,Image,Size (MB),Layers,Base Image,Created,Optimization Potential
+auth-service,microservices-k8s-project-auth-service:latest,45,1,
+unknown,2025-12-09,Low (<200MB)
+user-service,microservices-k8s-project-user-service:latest,45,1,
+unknown,2025-12-09,Low (<200MB)
+billing-service,microservices-k8s-project-billing-service:latest,45,1,
+unknown,2025-12-09,Low (<200MB)
+payment-service,microservices-k8s-project-payment-service:latest,45,1,
+unknown,2025-12-09,Low (<200MB)
+notification-service,microservices-k8s-project-notification-service:latest,45,1,
+unknown,2025-12-09,Low (<200MB)
+analytics-service,microservices-k8s-project-analytics-service:latest,45,1,
+unknown,2025-12-09,Low (<200MB)
+admin-service,microservices-k8s-project-admin-service:latest,45,1,
+unknown,2025-12-09,Low (<200MB)
+frontend,microservices-k8s-project-frontend:latest,22,1,
+unknown,2025-12-02,Low (<200MB)

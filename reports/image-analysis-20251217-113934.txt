@@ -1,0 +1,40 @@
+Docker Image Analysis Report
+Generated: Wed, Dec 17, 2025 11:39:35 AM
+==============================================
+
+==============================================
+SUMMARY
+==============================================
+Total Images: 8
+Total Size: 0B (0 bytes)
+Average Size: 0B
+Total Layers: 0
+Average Layers: 0
+
+==============================================
+OPTIMIZATION RECOMMENDATIONS
+==============================================
+
+1. Use Alpine Linux base images (node:18-alpine vs node:18)
+2. Multi-stage builds to exclude build dependencies
+3. Combine RUN commands to reduce layers
+4. Use .dockerignore to exclude unnecessary files
+5. Clear package manager cache after installation
+6. Use specific package versions
+7. Minimize number of COPY/ADD instructions
+8. Order Dockerfile from least to most frequently changed
+
+==============================================
+OPTIMIZATION POTENTIAL
+==============================================
+Current Total Size: 0B
+Expected After Optimization: 0B
+Potential Savings: 0B (50% reduction)
+
+Next Steps:
+1. Review Dockerfiles for each service
+2. Implement multi-stage builds
+3. Switch to Alpine base images
+4. Update .dockerignore files
+5. Run optimization build script
+6. Compare results with this baseline
