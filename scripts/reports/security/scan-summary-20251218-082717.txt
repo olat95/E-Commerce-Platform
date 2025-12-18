@@ -1,0 +1,15 @@
+Security Scan Summary Report
+Generated: Thu, Dec 18, 2025  8:27:17 AM
+Severity Filter: CRITICAL,HIGH,MEDIUM
+==============================================
+
+==============================================
+TOTAL SUMMARY
+==============================================
+Images Scanned: 8
+Clean Images: 8
+Critical: 0
+High: 0
+Medium: 0
+Low: 0
+

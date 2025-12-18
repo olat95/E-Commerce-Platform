@@ -1,0 +1,11 @@
+# Trivy Ignore File
+# Format: CVE-ID  # Comment
+
+# False positive - not applicable to our Node.js app
+CVE-2023-1234
+
+# No fix available, mitigation in place
+CVE-2023-5678  # Using workaround in code
+
+# Accepted risk - low severity, low exploitability
+CVE-2023-9999
