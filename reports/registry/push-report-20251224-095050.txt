@@ -1,0 +1,136 @@
+Docker Registry Push Report
+Generated: Wed, Dec 24, 2025  9:50:50 AM
+Registry: dockerhub
+Namespace: olat95
+==============================================
+
+Service: auth-service
+----------------------------------------
+  ✓ latest - SUCCESS
+    URL: olat95/auth-service:latest
+    Size: 44 MB
+  ✓ production - SUCCESS
+    URL: olat95/auth-service:production
+    Size: 44 MB
+  ✓ v1.0.0 - SUCCESS
+    URL: olat95/auth-service:v1.0.0
+    Size: 44 MB
+  ✗ v1.0.0-ca21c52 - NOT FOUND
+  Summary: 3 successful, 1 failed
+
+Service: user-service
+----------------------------------------
+  ✓ latest - SUCCESS
+    URL: olat95/user-service:latest
+    Size: 44 MB
+  ✓ production - SUCCESS
+    URL: olat95/user-service:production
+    Size: 44 MB
+  ✓ v1.0.0 - SUCCESS
+    URL: olat95/user-service:v1.0.0
+    Size: 44 MB
+  ✗ v1.0.0-ca21c52 - NOT FOUND
+  Summary: 3 successful, 1 failed
+
+Service: billing-service
+----------------------------------------
+  ✓ latest - SUCCESS
+    URL: olat95/billing-service:latest
+    Size: 44 MB
+  ✓ production - SUCCESS
+    URL: olat95/billing-service:production
+    Size: 44 MB
+  ✓ v1.0.0 - SUCCESS
+    URL: olat95/billing-service:v1.0.0
+    Size: 44 MB
+  ✗ v1.0.0-ca21c52 - NOT FOUND
+  Summary: 3 successful, 1 failed
+
+Service: payment-service
+----------------------------------------
+  ✓ latest - SUCCESS
+    URL: olat95/payment-service:latest
+    Size: 44 MB
+  ✓ production - SUCCESS
+    URL: olat95/payment-service:production
+    Size: 44 MB
+  ✓ v1.0.0 - SUCCESS
+    URL: olat95/payment-service:v1.0.0
+    Size: 44 MB
+  ✗ v1.0.0-ca21c52 - NOT FOUND
+  Summary: 3 successful, 1 failed
+
+Service: notification-service
+----------------------------------------
+  ✓ latest - SUCCESS
+    URL: olat95/notification-service:latest
+    Size: 44 MB
+  ✓ production - SUCCESS
+    URL: olat95/notification-service:production
+    Size: 44 MB
+  ✓ v1.0.0 - SUCCESS
+    URL: olat95/notification-service:v1.0.0
+    Size: 44 MB
+  ✗ v1.0.0-ca21c52 - NOT FOUND
+  Summary: 3 successful, 1 failed
+
+Service: analytics-service
+----------------------------------------
+  ✓ latest - SUCCESS
+    URL: olat95/analytics-service:latest
+    Size: 44 MB
+  ✓ production - SUCCESS
+    URL: olat95/analytics-service:production
+    Size: 44 MB
+  ✓ v1.0.0 - SUCCESS
+    URL: olat95/analytics-service:v1.0.0
+    Size: 44 MB
+  ✗ v1.0.0-ca21c52 - NOT FOUND
+  Summary: 3 successful, 1 failed
+
+Service: admin-service
+----------------------------------------
+  ✓ latest - SUCCESS
+    URL: olat95/admin-service:latest
+    Size: 44 MB
+  ✓ production - SUCCESS
+    URL: olat95/admin-service:production
+    Size: 44 MB
+  ✓ v1.0.0 - SUCCESS
+    URL: olat95/admin-service:v1.0.0
+    Size: 44 MB
+  ✗ v1.0.0-ca21c52 - NOT FOUND
+  Summary: 3 successful, 1 failed
+
+Service: frontend
+----------------------------------------
+  ✓ latest - SUCCESS
+    URL: olat95/frontend:latest
+    Size: 21 MB
+  ✓ production - SUCCESS
+    URL: olat95/frontend:production
+    Size: 21 MB
+  ✓ v1.0.0 - SUCCESS
+    URL: olat95/frontend:v1.0.0
+    Size: 21 MB
+  ✗ v1.0.0-ca21c52 - NOT FOUND
+  Summary: 3 successful, 1 failed
+
+==============================================
+TOTAL SUMMARY
+==============================================
+Total Images: 32
+Successful: 24
+Failed: 8
+Total Size: 1004 MB
+
+Registry URLs:
+  olat95/auth-service
+  olat95/user-service
+  olat95/billing-service
+  olat95/payment-service
+  olat95/notification-service
+  olat95/analytics-service
+  olat95/admin-service
+  olat95/frontend
+

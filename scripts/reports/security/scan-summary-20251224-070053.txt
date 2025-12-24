@@ -1,0 +1,79 @@
+Security Scan Summary Report
+Generated: Wed, Dec 24, 2025  7:00:53 AM
+Severity Filter: CRITICAL,HIGH,MEDIUM
+==============================================
+
+Image: auth-service:optimized
+  Status: CLEAN
+  Critical: 0
+  High: 0
+  Medium: 0
+  Low: 0
+  Total: 0
+
+Image: user-service:optimized
+  Status: CLEAN
+  Critical: 0
+  High: 0
+  Medium: 0
+  Low: 0
+  Total: 0
+
+Image: billing-service:optimized
+  Status: CLEAN
+  Critical: 0
+  High: 0
+  Medium: 0
+  Low: 0
+  Total: 0
+
+Image: payment-service:optimized
+  Status: CLEAN
+  Critical: 0
+  High: 0
+  Medium: 0
+  Low: 0
+  Total: 0
+
+Image: notification-service:optimized
+  Status: CLEAN
+  Critical: 0
+  High: 0
+  Medium: 0
+  Low: 0
+  Total: 0
+
+Image: analytics-service:optimized
+  Status: CLEAN
+  Critical: 0
+  High: 0
+  Medium: 0
+  Low: 0
+  Total: 0
+
+Image: admin-service:optimized
+  Status: CLEAN
+  Critical: 0
+  High: 0
+  Medium: 0
+  Low: 0
+  Total: 0
+
+Image: frontend:optimized
+  Status: CLEAN
+  Critical: 0
+  High: 0
+  Medium: 0
+  Low: 0
+  Total: 0
+
+==============================================
+TOTAL SUMMARY
+==============================================
+Images Scanned: 8
+Clean Images: 8
+Critical: 0
+High: 0
+Medium: 0
+Low: 0
+
